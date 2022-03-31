@@ -33,7 +33,7 @@ ENTRYPOINT [""]
 
 RUN apk update && \
   apk upgrade && \
-  apk add gnupg && \
+  apk add gnupg git && \
   rm -rf /var/cache/apk/*
 
 COPY --from=build /srv/app/bin/terragrunt /usr/bin/
