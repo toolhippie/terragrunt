@@ -3,10 +3,12 @@
     "extends": [
         "github>webhippie/renovate:docker"
     ],
-    "packageRules": [{
-        "groupName": "terragrunt packages",
-        "matchDatasources": [
-            "github-releases"
-        ]
-    }]
+    "packageRules": [
+        {
+            "groupName": "terragrunt packages",
+            "matchDatasources": [
+                "github-releases"
+            ]
+        }
+    ]
 }
