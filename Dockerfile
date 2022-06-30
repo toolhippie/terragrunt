@@ -28,7 +28,7 @@ RUN git clone -b v${TERRAGRUNT_VERSION} https://github.com/gruntwork-io/terragru
   cd /srv/app/src && \
   GO111MODULE=on go install -ldflags "-X main.version=$(git describe --tags --abbrev=12)" .
 
-FROM webhippie/alpine:3.15
+FROM webhippie/alpine:3.16
 ENTRYPOINT [""]
 
 RUN apk update && \
