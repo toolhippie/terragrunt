@@ -1,10 +1,10 @@
 FROM webhippie/golang:1.18 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
-ENV TERRAGRUNT_VERSION=0.38.4
+ENV TERRAGRUNT_VERSION=0.38.5
 
 # renovate: datasource=github-releases depName=hashicorp/terraform
-ENV TERRAFORM_VERSION=1.2.4
+ENV TERRAFORM_VERSION=1.2.5
 
 ARG TARGETARCH
 
