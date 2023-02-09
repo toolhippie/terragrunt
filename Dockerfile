@@ -4,7 +4,7 @@ FROM webhippie/golang:1.19 as build
 ENV TERRAGRUNT_VERSION=0.43.2
 
 # renovate: datasource=github-releases depName=hashicorp/terraform
-ENV TERRAFORM_VERSION=1.3.7
+ENV TERRAFORM_VERSION=1.3.8
 
 ARG TARGETARCH
 
