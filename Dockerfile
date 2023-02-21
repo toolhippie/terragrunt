@@ -1,4 +1,4 @@
-FROM webhippie/golang:1.19 as build
+FROM webhippie/golang:1.20 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
 ENV TERRAGRUNT_VERSION=0.43.2
