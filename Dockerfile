@@ -1,4 +1,4 @@
-FROM webhippie/golang:1.20 as build
+FROM ghcr.io/webhippie/golang:1.20 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
 ENV TERRAGRUNT_VERSION=0.44.5
@@ -28,7 +28,7 @@ RUN git clone -b v${TERRAGRUNT_VERSION} https://github.com/gruntwork-io/terragru
   cd /srv/app/src && \
   GO111MODULE=on go install -ldflags "-X main.version=$(git describe --tags --abbrev=12)" .
 
-FROM webhippie/alpine:3.17
+FROM ghcr.io/webhippie/alpine:3.17
 ENTRYPOINT [""]
 
 RUN apk update && \
