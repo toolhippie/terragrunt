@@ -4,7 +4,7 @@ FROM ghcr.io/dockhippie/golang:1.20 as build
 ENV TERRAGRUNT_VERSION=0.48.4
 
 # renovate: datasource=github-releases depName=hashicorp/terraform
-ENV TERRAFORM_VERSION=1.5.3
+ENV TERRAFORM_VERSION=1.5.4
 
 ARG TARGETARCH
 
