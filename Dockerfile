@@ -1,10 +1,10 @@
 FROM ghcr.io/dockhippie/golang:1.21 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
-ENV TERRAGRUNT_VERSION=0.63.5
+ENV TERRAGRUNT_VERSION=0.63.6
 
 # renovate: datasource=github-releases depName=hashicorp/terraform
-ENV TERRAFORM_VERSION=1.9.2
+ENV TERRAFORM_VERSION=1.9.3
 
 ARG TARGETARCH
 
