@@ -1,7 +1,7 @@
 FROM ghcr.io/dockhippie/golang:1.23 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
-ENV TERRAGRUNT_VERSION=0.73.12
+ENV TERRAGRUNT_VERSION=0.73.13
 
 # renovate: datasource=github-releases depName=hashicorp/terraform
 ENV TERRAFORM_VERSION=1.10.5
