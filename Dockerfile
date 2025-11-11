@@ -1,4 +1,4 @@
-FROM ghcr.io/dockhippie/golang:1.23 as build
+FROM ghcr.io/dockhippie/golang:1.23@sha256:8d1cff06bc3ad04ddc93f0b5346deb48d4079d4a69da49acb207c0c0010041f4 as build
 
 # renovate: datasource=github-releases depName=gruntwork-io/terragrunt
 ENV TERRAGRUNT_VERSION=0.93.5
@@ -28,7 +28,7 @@ RUN git clone -b v${TERRAGRUNT_VERSION} https://github.com/gruntwork-io/terragru
   cd /srv/app/src && \
   GO111MODULE=on go install -ldflags "-X main.version=$(git describe --tags --abbrev=12)" .
 
-FROM ghcr.io/dockhippie/alpine:3.22
+FROM ghcr.io/dockhippie/alpine:3.22@sha256:c5bd9014e136d50a0d82c511a4fcf52a2ef43c55d9d535de035870845d1a98be
 ENTRYPOINT [""]
 
 RUN apk update && \
